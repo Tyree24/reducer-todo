@@ -12,10 +12,10 @@ export default function TodoList() {
     <div>
              {
         state.map( (todo) => {
-          return <Todo todo={todo} key={todo.id} />
+          return <Todo todo={todo} key={todo.id} dispatch={dispatch}  />
         })
       }
-        <TodoForm dispatch= {dispath} />
+        <TodoForm dispatch= {dispatch} />
     </div>
   );
 }
