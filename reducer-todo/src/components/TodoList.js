@@ -9,7 +9,7 @@ export default function TodoList() {
 
 
   return (
-    <div>
+    <div className="todolist">
              {
         state.map( (todo) => {
           return <Todo todo={todo} key={todo.id} dispatch={dispatch}  />
